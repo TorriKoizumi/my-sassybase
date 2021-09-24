@@ -17,6 +17,12 @@ TABLE OF CONTENTS
     #CONTAINER
     #MEDIA qUERIES
     #SEMANTIC GRID SYSTEM
+#STRUCTURE
+    #SITE HEADER
+    #sITE NAV
+    #MAIN
+        #SECTION
+    #SITE FOOTER
 
 */
 body {
@@ -86,6 +92,18 @@ hr {
   margin: 0;
 }
 
+.section-heading {
+  font-size: 1em;
+  font-family: "Source Sans Pro", Helvetica, Arial, sansserif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  border-bottom: 5px solid red;
+  display: table;
+  padding: 0 0 0.5em 0;
+  margin: 1em auto 3em auto;
+}
+
 .button {
   display: inline-block;
   background-color: red;
@@ -110,7 +128,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 1em;
+  padding: 0 4%;
 }
 
 body {
@@ -213,5 +231,72 @@ body {
 .demo .row > * {
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1%;
+}
+
+.site-header {
+  background: #9e0000;
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.site-header a {
+  color: white;
+  text-decoration: none;
+}
+.site-header h1 {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+.site-footer {
+  background: #9e0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1em;
+}
+.site-footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.site-nav ul {
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+}
+.site-nav a {
+  display: inline-block;
+  padding: 1em;
+  line-height: 1;
+}
+
+section {
+  padding: 4em 0;
+}
+
+.hero {
+  background-color: #ffcaca;
+  text-align: center;
+  padding: 6em;
+}
+.hero h1 {
+  margin-bottom: 0.25em;
+}
+.hero p {
+  margin: 1em auto;
 }
 /*# sourceMappingURL=style.css.map */
